@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnBoarding</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+    <h2>EMPLOYEE ONBOARDING FORM</h2>
+    <div id="FormContainer">
+        <div id="FormDataContainer">
+            <form id="UserForm">
+                <div id="PersonalInfo">
+                    <h4>PERSONAL INFORMATION</h4>
+                    <div id="Username">
+                        <input type="text" id="FName" placeholder="Enter FirstName" class="InputSize">
+                        <input type="text" id="LName" placeholder="Enter LasttName" class="InputSize">
+                        <div id="DOBdate"><label id="DOBlabel">(DOB)</label><input type="date" id="DOB" placeholder="Enter DOB (DD/MM/YYYY)" class="InputSize"></div>
+                        <input type="text" id="FatherName" placeholder="Enter FatherName" class="InputSize">
+                        <input type="text" id="MotherName" placeholder="Enter MotherName" class="InputSize">
+                        <input type="number" id="EmergencyNumber" placeholder="Enter EmergencyNumber" class="InputSize">
+                         <input type="number" id="PhoneNo" placeholder="Enter PhoneNo" class="InputSize">
+                        <input type="text" id="MailID" placeholder="Enter MailID" class="InputSize">
+                    </div>
+                    <textarea id="address" placeholder="Enter Address"></textarea>
+                    <button id="Next" class="btn">Next</button>
+                </div>
+                <div id="EducationInfo">
+                    <h4>EDUCATION INFORMATION</h4>
+                    <h6>HighestEducation</h6>
+                    <div id="HighestEducation">
+                        <select class="InputSize" id="Degree">
+                            <option value="" disabled selected>Select Degree</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="B.Sc">B.Sc</option>
+                            <option value="M.Sc">M.Sc</option>
+                        </select>
+                        <select class="InputSize"  id="Course">
+                            <option value="" disabled selected>Select Course</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="IT">IT</option>
+                            <option value="MECH">MECH</option>
+                            <option value="CIVIL">CIVIL</option>
+                        </select>
+                        <input type="text" id="CollegeName" placeholder="Enter College Name" class="InputSize" >
+                        <input type="text" id="YOP" placeholder="Enter Year of Passing" class="InputSize" >
+                        <input type="number" id="Percentage" placeholder="Enter Percentage" class="InputSize" >
+                    </div>
+                    <h6>Inter Details</h6>
+                    <div id="InterDetails">
+                        <select class="InputSize"  id="interboard">
+                            <option value="" disabled selected>Select Inter Board</option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="State Board">State Board</option>
+                        </select>
+                        <input type="text" id="interschool" placeholder="Enter Inter School Name" class="InputSize" >
+                        <input type="number" id="interyop" placeholder="Enter Inter Year of Passing" class="InputSize" >
+                        <input type="number" id="interpercentage" placeholder="Enter Inter Percentage" class="InputSize" >
+                    </div>
+                    <h6>SSC Details</h6>
+                    <div id="AcademicDetails">
+                        <select class="InputSize"  id="sscboard">
+                            <option value="" disabled selected>Select SSC Board</option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="State Board">State Board</option>
+                        </select>
+                        <input type="text" id="sscschool" placeholder="Enter SSC School Name" class="InputSize" >
+                        <input type="number" id="sscyop" placeholder="Enter SSC Year of Passing" class="InputSize" >
+                        <input type="number" id="sscpercentage" placeholder="Enter SSC Percentage" class="InputSize" > 
+                    </div>
+                    <div id="btnGrp">
+                        <button id="Prev" 
+                        >Previous</button> <button id="next">Next</button>
+                    </div>                
+                </div>
+                <div id="ExperienceInfo">
+                    <h4>Experience Detais</h4>
+                    <input type="text" placeholder="Enter Company" id="Company" class="InputSize">
+                    <input type="text" placeholder="Enter Role" id="Role" class="InputSize">
+                    <input type="number" placeholder="Enter Experience in Years" id="Experience" class="InputSize">
+                    <textarea id="ExpDetails" placeholder="Describe your work experience..."></textarea>
+                    <div id="btnGrpExp">
+                        <button id="PrevExp">Previous</button> <button id="SubmitBtn" type="submit">Submit</button>
+                    </div>
+                </div>
+                    
+            </form>
+        </div>
+        <div id="FormPages">
+            <div id="progressbar">
+           <div id="Page1">Personal Details</div>
+           <div id="Page2">Education Details</div>
+           <div id="Page3">Experience Details</div>
+           </div>
+        </div> 
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
